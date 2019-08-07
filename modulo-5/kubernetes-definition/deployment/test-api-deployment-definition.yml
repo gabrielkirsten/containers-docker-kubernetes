@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: test-api-deployment
+  labels:
+    app: test-api
+
+spec:
+  template:
+    metadata:
+      name: test-api
+      labels:
+        app: test-api
+    spec:
+      containers:
+        - name: test-api
+          image: gabrielkirsten/test-api
+          env:
+            - name: MONGODB_SERVER
+              value: database-service
+
+  replicas: 5
+  selector:
+    matchLabels:
+      app: test-api

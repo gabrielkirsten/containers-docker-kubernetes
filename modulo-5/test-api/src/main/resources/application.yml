@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: test-api
+  data.mongodb:
+    host: ${MONGODB_SERVER:localhost}
+    port: 27017
+    database: test
+
+
