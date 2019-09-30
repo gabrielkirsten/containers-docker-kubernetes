@@ -12,5 +12,4 @@ RUN apt-get update && \
 CMD ["apachectl", "-D", "FOREGROUND"]
 
 # Expomos a porta 80 para poder acessar externamente 
-# com o parametro -t do docker run
 EXPOSE 80
