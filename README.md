@@ -1,2 +1,2 @@
-# containers-docker-kubernetes
+# Containers: Docker e Kubernetes
 Repositório de códigos do curso de Containers: Docker e Kubernetes
